@@ -25,6 +25,7 @@ const CarCard = ({ car }: CarCardProps) => {
           {make} {model}
         </h2>
       </div>
+
       <p className="flex mt-6 text-[32px] leading-[38px] font-extrabold">
         <span className="self-start text-[14px] leading-[17px] font-semibold">
           $
@@ -44,6 +45,7 @@ const CarCard = ({ car }: CarCardProps) => {
           className="object-contain"
         />
       </div>
+
       <div className="relative flex w-full mt-2">
         <div className="flex group-hover:invisible w-full justify-between text-grey">
           <div className="flex flex-col justify-center items-center gap-2">
@@ -66,6 +68,7 @@ const CarCard = ({ car }: CarCardProps) => {
             <p className="car-card__icon-text">{city_mpg} MPG</p>
           </div>
         </div>
+
         <div className="car-card__btn-container">
           <CustomButton
             title="View More"
@@ -76,6 +79,7 @@ const CarCard = ({ car }: CarCardProps) => {
           />
         </div>
       </div>
+
       <CarDetails
         isOpen={isOpen}
         closeModal={() => setIsOpen(false)}
